@@ -35,4 +35,20 @@ To control access to shared resources (e.g., database connections, configuration
 To ensure consistency across the application by using a single instance.
 To reduce memory footprint by avoiding multiple instantiations.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Structure of Singleton Pattern
+Private Constructor – Prevents instantiation from outside the class.
+Private Static Instance – Holds the single instance of the class.
+Public Static Method – Provides global access to the instance.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+✅ Advantages
+Controlled access to the sole instance.
+Reduced memory usage.
+Useful for shared resources.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+📦 Real-World Examples
+Logger classes
+Configuration managers
+Thread pools
+Database connection pools
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
