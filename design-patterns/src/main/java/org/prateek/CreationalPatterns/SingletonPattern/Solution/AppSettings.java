@@ -29,3 +29,10 @@ public class AppSettings {
         return apiKey;
     }
 }
+===================================================================================================================================================================
+🧠 Why Use Singleton?
+To control access to shared resources (e.g., database connections, configuration settings).
+To ensure consistency across the application by using a single instance.
+To reduce memory footprint by avoiding multiple instantiations.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
