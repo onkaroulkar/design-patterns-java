@@ -81,3 +81,35 @@ ConcreteBuilder – Implements the Builder interface and builds the product.
 Director (optional) – Controls the building process.
 Client – Uses the builder to construct the object.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+🔍 Key Features
+Immutable Object: The final Computer object is immutable.
+Readable Code: The builder pattern makes the code more readable and maintainable.
+Flexible Construction: You can create different configurations of the same object.
+✅ Advantages
+Avoids constructor telescoping.
+Improves code readability.
+Makes object construction flexible and controlled.
+Supports immutability.
+❌ Disadvantages
+More verbose due to additional classes.
+Slightly more complex than using constructors directly.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+1. Lombok's @Builder Annotation
+Lombok simplifies Java code by generating boilerplate code at compile time. The @Builder annotation is a direct implementation of the Builder pattern.
+
+import lombok.Builder;
+
+@Builder
+public class User {
+    private String name;
+    private int age;
+    private String email;
+}
+
+User user = User.builder()
+                .name("Alice")
+                .age(30)
+                .email("alice@example.com")
+                .build();
+ Why it’s useful: No need to manually write the builder class—Lombok generates it for you.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
