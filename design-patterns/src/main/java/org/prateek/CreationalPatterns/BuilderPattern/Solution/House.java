@@ -63,3 +63,21 @@ public class House {
         }
     }
 }
+
+==================================================================================================================================================================
+The Builder Design Pattern in Java is a powerful and flexible way to construct complex objects. It is especially useful when an object has many optional 
+parameters or when you want to make your code more readable and maintainable.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+What Is the Builder Pattern?
+The Builder Pattern is a creational design pattern that lets you construct complex objects step by step. It allows you to create different types and 
+representations of an object using the same construction code.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Structure of the Builder Pattern in Java
+Here’s a breakdown of the components:
+
+Product – The object that is being built.
+Builder – An abstract class or interface that defines the building steps.
+ConcreteBuilder – Implements the Builder interface and builds the product.
+Director (optional) – Controls the building process.
+Client – Uses the builder to construct the object.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
